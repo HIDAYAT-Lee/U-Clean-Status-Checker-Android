@@ -11,16 +11,17 @@
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:layout_marginTop="17dp"
-        android:layout_marginEnd="60dp"
         android:text="关于"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/side"
         app:layout_constraintTop_toBottomOf="@+id/side" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginEnd="107dp"
         android:text="U净洗衣机状态查询器"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,51 +40,50 @@
         android:id="@+id/building"
         android:layout_width="138dp"
         android:layout_height="48dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="选择宿舍楼"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="43dp"
         android:text="选择水控端:"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <Spinner
         android:id="@+id/side"
         android:layout_width="138dp"
         android:layout_height="48dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="17dp"
         android:contentDescription="选择宿舍楼"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/building" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
         android:layout_marginTop="48dp"
         android:text="选择宿舍楼:"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/button_check"
         android:layout_width="120dp"
         android:layout_height="50dp"
-        android:layout_marginStart="78dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="18dp"
         android:text="查询"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button_about"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/button_about"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <ScrollView
         android:id="@+id/resultshower"
